@@ -9,8 +9,7 @@ const tabs = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [tab, setTab] = useState(0);
   return (
     <div className="container">
       <ul>
@@ -21,7 +20,7 @@ function App() {
       <div className="dataHolder">
         Clicking each tab should hide the content of the other tab and show the
         content of clicked tab. By default, enable the first tab.
-        <div>e.tabName content to be displayed here.</div>
+        <div>{tabs[tab].tabName} content to be displayed here.</div>
         Add some dummy content or just add a simple text showing the tab.
       </div>
     </div>
