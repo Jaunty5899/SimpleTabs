@@ -18,6 +18,12 @@ function App() {
           return <li>{e.tabName}</li>;
         })}
       </ul>
+      <div className="dataHolder">
+        Clicking each tab should hide the content of the other tab and show the
+        content of clicked tab. By default, enable the first tab.
+        <div>e.tabName content to be displayed here.</div>
+        Add some dummy content or just add a simple text showing the tab.
+      </div>
     </div>
   );
 }
