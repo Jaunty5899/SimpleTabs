@@ -32,6 +32,7 @@ function App() {
         {tabs.map((e) => {
           return (
             <li
+              // className={`${tabs.includes(e) ? "active" : null}`}
               onClick={() => {
                 setTab(tabs.indexOf(e));
               }}
