@@ -14,7 +14,15 @@ function App() {
     <div className="container">
       <ul>
         {tabs.map((e) => {
-          return <li>{e.tabName}</li>;
+          return (
+            <li
+              onClick={() => {
+                return console.log(tabs.indexOf(e) + 1);
+              }}
+            >
+              {e.tabName}
+            </li>
+          );
         })}
       </ul>
       <div className="dataHolder">
