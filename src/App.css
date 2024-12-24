@@ -21,6 +21,12 @@ li {
   border-bottom: 3px solid transparent;
   transition: border-color 0.25s linear;
 }
-li:active {
+.active {
   border-color: white;
+}
+.tabData {
+  border-radius: 20px;
+  background-color: black;
+  margin: 20px 0px;
+  padding: 20px;
 }
